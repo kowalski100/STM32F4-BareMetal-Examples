@@ -170,9 +170,11 @@ static void configInputPin (void) {
     
 }
 
-
+#ifdef   __cplusplus
+    extern  "C" {        
+#endif
 void EXTI0_IRQHandler (void) {
-    
+
     /*
         Clear the pending interrupt
     */
@@ -184,4 +186,8 @@ void EXTI0_IRQHandler (void) {
     */
     __togglebit(GPIOD->ODR, 15);
 }
+#ifdef   __cplusplus
+    extern  "C" {
+    }
+#endif
 
