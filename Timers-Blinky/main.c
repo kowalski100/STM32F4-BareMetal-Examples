@@ -98,6 +98,9 @@ int main () {
     Timer-2 Interrupt Handler
 **********************************************************/
 
+#ifdef   __cplusplus
+    extern "C" {
+#endif        
 void TIM2_IRQHandler (void) {
     
     /* clear timer interrupt */
@@ -106,6 +109,10 @@ void TIM2_IRQHandler (void) {
     /* Toggle BLUE-LED PD#15 on timer interrupt*/
     __togglebit(GPIOD->ODR, 15);
 }
+#ifdef   __cplusplus
+    }
+#endif
+
 
 static void initLed(void) {
 
