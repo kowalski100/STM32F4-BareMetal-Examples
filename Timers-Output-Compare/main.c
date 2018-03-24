@@ -6,11 +6,11 @@
  * @description:    This code configures Timer-4 output
  *                  channels, connected to onboard GPIOS
  *                  in ouput compare mode. Each Channel
- *                  upon successful match, toggle the 
- *                  onboard LED.
+ *                  upon successful match, toggle one of
+ *                  the onboard LED.
  */
 
-/*  
+/*
     Web Link: 
 */
 
@@ -94,6 +94,21 @@ static void initTimer(void) {
     /****************************************
           CONFIGURE TIMER CHANNEL
     ****************************************/
+
+    /*
+      Set all four channel to output mode (default mode)
+    */
+    __clearbit(TIM4->CCMR1, 0U);
+    __clearbit(TIM4->CCMR1, 1U);
+
+    __clearbit(TIM4->CCMR1, 8U);
+    __clearbit(TIM4->CCMR1, 9U);
+
+    __clearbit(TIM4->CCMR2, 0U);
+    __clearbit(TIM4->CCMR2, 1U);
+
+    __clearbit(TIM4->CCMR2, 8U);
+    __clearbit(TIM4->CCMR2, 9U);
 
     /*
         Timer channel to toggle OCxREF signal upon 
