@@ -2,7 +2,7 @@
 @author:    Ijaz Ahmad
 
 @descp:     This Program configures USART3 and redirect
-						printf strings to USART3 Tx PB.10
+			printf strings to USART3 Tx PB.10
 
 @warrenty:  void
 */

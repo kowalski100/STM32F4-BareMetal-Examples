@@ -11,17 +11,17 @@
     <View>
       <WinId>38003</WinId>
       <ViewName>Registers</ViewName>
-      <TableColWidths>131 87</TableColWidths>
+      <TableColWidths>115 103</TableColWidths>
     </View>
     <View>
       <WinId>346</WinId>
       <ViewName>Code Coverage</ViewName>
-      <TableColWidths>665 459</TableColWidths>
+      <TableColWidths>665 160</TableColWidths>
     </View>
     <View>
       <WinId>204</WinId>
       <ViewName>Performance Analyzer</ViewName>
-      <TableColWidths>265 123 123 613</TableColWidths>
+      <TableColWidths>825</TableColWidths>
     </View>
   </SECTreeCtrl>
 
@@ -3392,7 +3392,7 @@
         <Name>.\main.c</Name>
         <ColumnNumber>0</ColumnNumber>
         <TopLine>14</TopLine>
-        <CurrentLine>17</CurrentLine>
+        <CurrentLine>34</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>

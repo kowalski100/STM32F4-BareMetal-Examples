@@ -2,11 +2,11 @@
 @author:    Ijaz Ahmad
 
 @descp:     This Program redirects printf string to
-						STLINK-v2 (via ARM ITM cell). i.e. printf
-						messages will can be received from same
-						usb cable connected to STM32f4-Discovery
-						board that programms the onboard micro-
-						controller- no extra hardware is required.
+			STLINK-v2 (via ARM ITM cell). i.e. printf
+			messages will can be received from same
+			usb cable connected to STM32f4-Discovery
+			board that programms the onboard micro-
+			controller- no extra hardware is required.
 
 @warrenty:  void
 */
