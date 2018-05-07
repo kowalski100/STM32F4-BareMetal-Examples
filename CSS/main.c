@@ -49,7 +49,7 @@ int main () {
   
   regVal |= 0x1;  // SW1, SW0 bits
   
-  RCC->CFGR = regVal;
+  RCC->CFGR = regVal; //switch to HSE
 
   while (1) {
     /* do other stuff here */
@@ -60,6 +60,9 @@ int main () {
 /*
   Interrupt Handler for NMI
 */
+#ifdef   __cplusplus
+    extern "C" {
+#endif 
 void NMI_Handler (void) {
 
   /*
@@ -83,4 +86,8 @@ void NMI_Handler (void) {
   
   }
 }
+
+#ifdef   __cplusplus
+    }
+#endif
 
