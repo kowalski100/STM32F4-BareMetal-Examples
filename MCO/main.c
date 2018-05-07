@@ -68,10 +68,10 @@ int main () {
   
   /*
     Now HSI clock is connected to MCO1
-    MCO1 pin will now provide clock of 4Mhz.
+    MCO1 pin will now provide clock of ~4Mhz.
   */
   
-  while (1); //stop processor for test purposes
+  while (1); //stuck processor here for test purposes
   
 }
 
