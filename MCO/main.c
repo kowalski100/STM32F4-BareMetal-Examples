@@ -1,8 +1,8 @@
 /*
 @author:    Ijaz Ahmad
 
-@descp:     This Program MCO
-            
+@descp:     This Program configures PA.8 Pin (MCO1)
+            to output HSI clock as Test Clock.
 
 @warrenty:  void
 */
